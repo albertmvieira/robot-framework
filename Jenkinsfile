@@ -2,6 +2,7 @@ pipeline {
    agent {
       docker {
          image "python"
+         args "--network=skynet"
       }
    }
 
@@ -14,7 +15,7 @@ pipeline {
 
       stage('Tests') {
          steps {
-            echo "robot -d ./results specs/api"
+            sh "robot -d ./results specs/api"
          }
       }
    }
