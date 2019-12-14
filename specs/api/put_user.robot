@@ -1,6 +1,5 @@
 *** Settings ***
 Resource    ./base_api.robot
-Library     Faker
 
 *** Variables ***
 ${email}       tony@stark.com 
