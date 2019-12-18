@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    ./base.robot
-Library     ../lib/db.py
+Library     ../../lib/db.py
 
 *** Variables ***
 #DataTest

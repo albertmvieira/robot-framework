@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library     String
-Resource    ../elements.robot
+Resource    ../../elements.robot
 
 *** Variables ***
 ${DEFAULT_URL}      http://ninjaplus-web:5000/login
