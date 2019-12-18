@@ -17,6 +17,11 @@ pipeline {
          steps {
             sh "robot -d ./results specs"
          }
+         post {
+            always{
+               robot otherFiles: '**/*.png', outputPath: 'results'
+            }
+         }
       }
    }
 }
